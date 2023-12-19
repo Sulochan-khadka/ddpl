@@ -1,0 +1,6 @@
+.navigation {
+  cursor: pointer;
+}
+.navigation-part:hover {
+  color: #ee3224;
+}
