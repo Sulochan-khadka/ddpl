@@ -1,6 +1,61 @@
 .navigation {
   cursor: pointer;
+  height: 55px;
+  display: flex;
+  padding: 10px 10px;
+  font-size: 18px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+.active {
+  cursor: pointer;
+  height: 36px;
+  padding: 6px 6px;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
 }
 .navigation-part:hover {
   color: #ee3224;
+}
+.short-nav {
+  display: flex;
+  height: 38px;
+  width: 180px;
+  background-color: rgb(43, 33, 33);
+  top: 48px;
+  position: absolute;
+  left: 78%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.sq-nav {
+  margin: 10px 0px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cir-nav {
+  height: 23px;
+  width: 23px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cir-nav:hover {
+  background-color: rgb(249, 166, 12);
+  color: white;
 }

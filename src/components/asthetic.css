@@ -1,0 +1,64 @@
+.asthetic-container {
+  background-color: #141414;
+  position: relative;
+  overflow: hidden;
+}
+
+.asthetic-title-left {
+  color: white;
+  font-size: 100px;
+  margin-left: 5%;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin-bottom: 2%;
+}
+.slide-left {
+  animation: slideInFromLeft 5s ease;
+  transition: slide 1s;
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-10%); /* Start off-screen */
+  }
+  to {
+    transform: translateX(0%); /* End position */
+  }
+}
+
+.slide-right {
+  animation: slideInFromRight 5s ease;
+  transition: slide 1s;
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(10%); /* Start off-screen */
+  }
+  to {
+    transform: translateX(0%); /* End position */
+  }
+}
+
+.asthetic-title-right {
+  color: white;
+  font-size: 100px;
+  font-weight: 300;
+  font-family: sans-serif;
+  margin-left: 31%;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-vid {
+  height: 548px;
+  width: 966px;
+}
+
+.asthetic-title-container {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}

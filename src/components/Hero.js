@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import image1 from '../img/designers-22Q4-1.jpg';
-import image2 from '../img/architects-22Q4-1.jpg.avif';
-import image3 from '../img/research-22Q4.jpg.avif';
-import image4 from '../img/planners-22Q4-1.jpg';
-import image5 from '../img/advisors-22Q4-1.jpg.avif';
+import image1 from '../assets/img/designers-22Q4-1.jpg';
+import image2 from '../assets/img/architects-22Q4-1.jpg.avif';
+import image3 from '../assets/img/research-22Q4.jpg.avif';
+import image4 from '../assets/img/planners-22Q4-1.jpg';
+import image5 from '../assets/img/advisors-22Q4-1.jpg.avif';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import './hero.css';
 

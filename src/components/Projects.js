@@ -1,8 +1,34 @@
 import React from 'react';
-
+import './projects.css';
 const Projects = () => {
   return (
-    <div>
+    <div className='project-container'>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
+      <div>Projects</div>
       <div>Projects</div>
     </div>
   );

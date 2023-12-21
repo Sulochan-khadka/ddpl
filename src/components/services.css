@@ -1,0 +1,45 @@
+.service-container {
+  background-color: #141414;
+  position: relative;
+  display: flex;
+}
+
+/* .static-part {
+  position: relative;
+  color: white;
+  position: sticky;
+  width: 45%;
+  padding: 0px 70px;
+  scroll-behavior: unset;
+} */
+
+.static-part {
+  position: relative; /* Initially set to relative for smooth transition */
+  color: white;
+  width: 45%;
+  padding: 0px 70px;
+  scroll-behavior: unset;
+}
+
+.static-title {
+  font-size: 55px;
+}
+
+.static-desc {
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.scroll-part {
+  color: white;
+}
+
+.scroll-container {
+  height: 296px;
+  width: 570px;
+  border-radius: 10px;
+  background-color: white;
+  color: #141414;
+  margin-bottom: 30px;
+}
