@@ -41,6 +41,7 @@ const Navigation = () => {
           </div>
         </div>
       )}
+
       <div
         style={{
           marginLeft: '50px',
@@ -48,6 +49,7 @@ const Navigation = () => {
           fontSize: '30px',
           color: '#ee3224',
           fontWeight: 'bolder',
+          cursor: 'pointer',
         }}
       >
         Gensler

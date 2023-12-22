@@ -12,28 +12,42 @@
   z-index: 1;
 }
 .active {
+  position: relative;
   cursor: pointer;
-  height: 36px;
-  padding: 6px 6px;
+  height: 55px;
+  padding: 0px 6px;
   display: flex;
   font-size: 15px;
   align-items: center;
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: transparent;
   width: 100%;
   z-index: 1;
+  padding-bottom: 27px;
 }
+
+.active:before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  height: 46px;
+  width: 100%;
+  background-color: white;
+  z-index: -1;
+  left: 0;
+}
+
 .navigation-part:hover {
   color: #ee3224;
 }
 .short-nav {
+  position: absolute;
   display: flex;
   height: 38px;
   width: 180px;
   background-color: rgb(43, 33, 33);
-  top: 48px;
-  position: absolute;
+  top: 46px;
   left: 78%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
