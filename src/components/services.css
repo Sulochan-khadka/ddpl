@@ -2,23 +2,16 @@
   background-color: #141414;
   position: relative;
   display: flex;
+  padding-top: 5%;
+  padding-bottom: 20%;
 }
-
-/* .static-part {
-  position: relative;
-  color: white;
-  position: sticky;
-  width: 45%;
-  padding: 0px 70px;
-  scroll-behavior: unset;
-} */
-
 .static-part {
-  position: relative; /* Initially set to relative for smooth transition */
+  margin-right: 40%;
+  position: absolute;
   color: white;
   width: 45%;
   padding: 0px 70px;
-  scroll-behavior: unset;
+  margin-bottom: 10px;
 }
 
 .static-title {
@@ -33,13 +26,65 @@
 }
 .scroll-part {
   color: white;
+  width: 100%;
 }
 
 .scroll-container {
-  height: 296px;
-  width: 570px;
-  border-radius: 10px;
+  margin-left: 55%;
+  height: 286px;
+  width: 520px;
+  border-radius: 24px;
   background-color: white;
   color: #141414;
   margin-bottom: 30px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.static-part.fix {
+  top: 10%;
+  position: fixed;
+  padding-bottom: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #141414;
+  padding-bottom: 10px;
+}
+
+.card-video {
+  height: 236px;
+  width: 570px;
+}
+
+.card-readmore-container {
+  margin-top: 5px;
+  margin-left: 60%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+  width: 148px;
+  border: 2px solid #141414;
+  background-color: white;
+  color: #141414;
+  border-radius: 26px;
+}
+
+.card-readmore {
+  font-family: sans-serif;
+  font-size: 17px;
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+.card-readmore-container:hover {
+  cursor: pointer;
+  background-color: #141414;
+  color: white;
 }
