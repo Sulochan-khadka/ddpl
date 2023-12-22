@@ -1,5 +1,4 @@
 .navigation {
-  cursor: pointer;
   height: 55px;
   display: flex;
   padding: 10px 10px;
@@ -13,7 +12,6 @@
 }
 .active {
   position: relative;
-  cursor: pointer;
   height: 55px;
   padding: 0px 6px;
   display: flex;
@@ -40,6 +38,7 @@
 
 .navigation-part:hover {
   color: #ee3224;
+  cursor: pointer;
 }
 .short-nav {
   position: absolute;
