@@ -7,6 +7,45 @@ import { HiMail } from 'react-icons/hi';
 
 const Navigation = () => {
   const [navbar, setNavbar] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showExpert, setShowExpert] = useState(false);
+  const [showResearch, setShowResearch] = useState(false);
+  const aboutHandler = () => {
+    setShowAbout(!showAbout);
+    setShowExpert(false);
+    setShowResearch(false);
+  };
+
+  const expertiseHandler = () => {
+    setShowAbout(false);
+    setShowExpert(!showExpert);
+    setShowResearch(false);
+  };
+  const projectsHandler = () => {
+    setShowAbout(false);
+    setShowExpert(false);
+    setShowResearch(false);
+  };
+  const researchHandler = () => {
+    setShowAbout(false);
+    setShowExpert(false);
+    setShowResearch(!showResearch);
+  };
+  const testimonialsHandler = () => {
+    setShowAbout(false);
+    setShowExpert(false);
+    setShowResearch(false);
+  };
+  const joinHandler = () => {
+    setShowAbout(false);
+    setShowExpert(false);
+    setShowResearch(false);
+  };
+  const contactHandler = () => {
+    setShowAbout(false);
+    setShowExpert(false);
+    setShowResearch(false);
+  };
 
   const changeNav = () => {
     if (window.scrollY >= 55) {
@@ -54,25 +93,105 @@ const Navigation = () => {
       >
         Gensler
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={aboutHandler}
+      >
         Who We Are
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      {showAbout && (
+        <div className='aboutContainer'>
+          <div className='texts'>
+            <div className='spanContainer'>
+              <span className='text'>Firm Profile</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Our Belief</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Meet Our Leadership</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Awards & Empanelments</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={expertiseHandler}
+      >
         Expertise
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      {showExpert && (
+        <div className='expertContainer'>
+          <div className='texts'>
+            <div className='spanContainer'>
+              <span className='text'>Developer</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Construction</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Engineering</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Consultancy</span>
+            </div>
+          </div>
+        </div>
+      )}
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={projectsHandler}
+      >
         Projects
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={researchHandler}
+      >
         Research & Insights
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      {showResearch && (
+        <div className='researchContainer'>
+          <div className='texts'>
+            <div className='spanContainer'>
+              <span className='text'>News</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>In Media</span>
+            </div>
+            <div className='spanContainer'>
+              <span className='text'>Blog</span>
+            </div>
+          </div>
+        </div>
+      )}
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={testimonialsHandler}
+      >
         Testimonials
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={joinHandler}
+      >
         Join Our Team
       </div>
-      <div className='navigation-part' style={{ margin: '0 13px' }}>
+      <div
+        className='navigation-part'
+        style={{ margin: '0 13px' }}
+        onClick={contactHandler}
+      >
         Contact Us
       </div>
     </div>
