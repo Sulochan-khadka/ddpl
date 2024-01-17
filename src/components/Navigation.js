@@ -173,26 +173,28 @@ const Navigation = () => {
           </div>
         </div>
       )}
-      <div
-        className='navigation-part'
-        style={{ margin: '0 13px' }}
-        onClick={testimonialsHandler}
-      >
-        Testimonials
-      </div>
-      <div
-        className='navigation-part'
-        style={{ margin: '0 13px' }}
-        onClick={joinHandler}
-      >
-        Join Our Team
-      </div>
-      <div
-        className='navigation-part'
-        style={{ margin: '0 13px' }}
-        onClick={contactHandler}
-      >
-        Contact Us
+      <div className='secondary-topics'>
+        <div
+          className='navigation-part'
+          style={{ margin: '0 13px' }}
+          onClick={testimonialsHandler}
+        >
+          Testimonials
+        </div>
+        <div
+          className='navigation-part'
+          style={{ margin: '0 13px' }}
+          onClick={joinHandler}
+        >
+          Join Our Team
+        </div>
+        <div
+          className='navigation-part'
+          style={{ margin: '0 13px' }}
+          onClick={contactHandler}
+        >
+          Contact Us
+        </div>
       </div>
     </div>
   );

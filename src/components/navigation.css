@@ -216,3 +216,8 @@
   top: 5%;
   background-color: #141414;
 }
+.secondary-topics {
+  margin-left: auto;
+  display: flex;
+  margin-right: 5%;
+}
