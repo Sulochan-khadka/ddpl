@@ -1,3 +1,18 @@
 .project-container {
   background-color: #141414;
+  overflow-x: scroll;
+}
+.project-horizontal {
+  display: flex;
+  overflow-x: scroll;
+  padding: 30px 0;
+}
+
+.image-div {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.image-project {
+  width: 300px;
+  height: 300px;
 }

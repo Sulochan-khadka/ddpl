@@ -63,23 +63,7 @@ const Hero = () => {
                 <div className='text-in'>{item.title}</div> .{' '}
               </div>
             </div>
-            <div className='in-button' onClick={buttonClick}>
-              I'm interested in
-              {active && (
-                <div className='interested-container'>
-                  <div className='options'>
-                    <div className='option-text'>Who Are We</div>
-                    <div className='option-text'>Expertise</div>
-                    <div className='option-text'>Projects</div>
-                    <div className='option-text'>Research & Insights</div>
-                    {/* <div className='option-text'>Testimonials</div>
-                    <div className='option-text'>Join Our Team</div>
-                    <div className='option-text'>Contact Us</div> */}
-                  </div>
-                </div>
-              )}
-              {active ? <IoIosArrowUp /> : <IoIosArrowDown />}
-            </div>
+
             <img
               src={item.image}
               alt='the best one'
@@ -88,6 +72,24 @@ const Hero = () => {
           </div>
         ))}
       </Slider>
+      <span className='in-button' onClick={buttonClick}>
+        <span>
+          I'm interested in{' '}
+          <span>{active ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+        </span>
+        <div>
+          {active && (
+            <div className='interested-container'>
+              <div className='options'>
+                <div className='option-text'>Who Are We</div>
+                <div className='option-text'>Expertise</div>
+                <div className='option-text'>Projects</div>
+                <div className='option-text'>Research & Insights</div>
+              </div>
+            </div>
+          )}
+        </div>
+      </span>
     </div>
   );
 };

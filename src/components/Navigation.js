@@ -4,6 +4,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
+import logo from '../assets/img/logo/logo_image.png';
 
 const Navigation = () => {
   const [navbar, setNavbar] = useState(false);
@@ -80,18 +81,32 @@ const Navigation = () => {
           </div>
         </div>
       )}
-
+      {/* <div className='short-navbar'> */}
       <div
         style={{
-          marginLeft: '50px',
-          marginRight: '40px',
-          fontSize: '30px',
-          color: '#ee3224',
-          fontWeight: 'bolder',
-          cursor: 'pointer',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
-        Gensler
+        {navbar && (
+          <img
+            src={logo}
+            alt='Logo'
+            style={{
+              width: '45px',
+              height: '45px',
+              margin: '0 80px 8px 80px',
+            }}
+          />
+        )}
+        {!navbar && (
+          <img
+            src={logo}
+            alt='Logo'
+            style={{ width: '70px', height: '70px', margin: '0 80px 0 80px' }}
+          />
+        )}
       </div>
       <div
         className='navigation-part'
@@ -196,6 +211,7 @@ const Navigation = () => {
           Contact Us
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };

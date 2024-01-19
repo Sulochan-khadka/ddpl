@@ -9,6 +9,7 @@
   background-color: white;
   width: 100%;
   z-index: 1;
+  transition: all 0.5s;
 }
 .active {
   position: relative;
@@ -16,13 +17,14 @@
   padding: 0px 6px;
   display: flex;
   font-size: 15px;
-  align-items: baseline;
+  align-items: center;
   position: fixed;
   top: 0;
   background-color: transparent;
   width: 100%;
   z-index: 1;
   padding-bottom: 27px;
+  transition: all 0.5s;
 }
 
 .active:before {
@@ -221,3 +223,7 @@
   display: flex;
   margin-right: 5%;
 }
+/* .short-navbar {
+  display: flex;
+  align-items: center;
+} */
