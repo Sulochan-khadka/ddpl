@@ -1,0 +1,20 @@
+.banner-wrapper {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 0 10px 0;
+}
+.awards-container {
+  margin: 0 0 0 150px;
+  overflow: hidden;
+}
+.awards-image {
+  width: 100px;
+  height: 100px;
+  filter: brightness(50%) sepia(100%) hue-rotate(180deg);
+}
+.awards-image:hover {
+  filter: none;
+}
+.focus:focus {
+  outline: 0;
+  outline: none;
+}

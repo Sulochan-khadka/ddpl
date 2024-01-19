@@ -1,0 +1,51 @@
+.slide-container {
+  position: relative;
+}
+
+.image-description {
+  position: absolute;
+  bottom: 270px;
+  left: 120px;
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: white;
+}
+.image-description .image-text {
+  font-weight: 900;
+}
+
+.in-button {
+  font-family: sans-serif;
+  color: white;
+  font-size: 40px;
+  position: relative;
+  /* top: 100%; */
+  bottom: 190px;
+  left: 120px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.interested-container {
+  position: relative;
+  height: auto;
+  width: 400px;
+  background-color: rgb(240, 244, 244);
+  border-radius: 10px;
+  /* top: 100%; */
+  /* overflow-y: auto; */
+  border: 1px solid #ccc;
+}
+
+.options {
+  margin-left: 0;
+  font-size: 25px;
+  color: black;
+  font-family: sans-serif;
+  padding: 10px 20px;
+}
+
+.option-text {
+  padding-bottom: 20px;
+}
