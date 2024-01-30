@@ -2,48 +2,51 @@
   background-color: #141414;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  padding-bottom: 10%;
 }
 
 .asthetic-title-left {
-  color: white;
+  color: #f4f4f4;
   font-size: 100px;
-  margin-left: 5%;
+  width: 100%;
+  /* margin-left: 5%; */
   font-family: sans-serif;
   font-weight: 300;
   margin-bottom: 2%;
 }
 .slide-left {
-  animation: slideInFromLeft 5s ease;
+  animation: slideInFromLeft 3s ease-in-out forwards;
   transition: slide 1s;
 }
 @keyframes slideInFromLeft {
   from {
-    transform: translateX(-10%); /* Start off-screen */
+    transform: translateX(0%); /* Start off-screen */
   }
   to {
-    transform: translateX(0%); /* End position */
+    transform: translateX(27%); /* End position */
   }
 }
 
 .slide-right {
-  animation: slideInFromRight 5s ease;
+  animation: slideInFromRight 3s ease-in-out forwards;
   transition: slide 1s;
 }
 @keyframes slideInFromRight {
   from {
-    transform: translateX(10%); /* Start off-screen */
+    transform: translateX(100%); /* Start off-screen */
   }
   to {
-    transform: translateX(0%); /* End position */
+    transform: translateX(48%); /* End position */
   }
 }
 
 .asthetic-title-right {
-  color: white;
+  color: #f4f4f4;
   font-size: 100px;
   font-weight: 300;
   font-family: sans-serif;
-  margin-left: 31%;
+  /* margin-left: 31%; */
 }
 
 .video-container {
@@ -60,5 +63,6 @@
 .asthetic-title-container {
   position: absolute;
   top: 10%;
-  left: 30%;
+  /* left: 30%; */
+  width: 100%;
 }
