@@ -4,7 +4,7 @@
 .names {
   position: relative;
   padding: 5% 0 0% 6%;
-  color: white;
+  color: #f4f4f4;
   font-size: 20px;
   display: flex;
 }
@@ -49,7 +49,7 @@
   top: 0%;
   padding: 10px 0 4.5% 6.6%;
   background-color: #141414;
-  color: white;
+  color: #f4f4f4;
   font-size: 20px;
   align-items: baseline;
 }
@@ -66,13 +66,13 @@
   border-radius: 100%;
   font-size: 16px;
   color: #141414;
-  background-color: white;
+  background-color: #f4f4f4;
   margin-right: 12px;
 }
 .icon:hover {
   cursor: hover;
   background-color: rgb(249, 166, 12);
-  color: white;
+  color: #f4f4f4;
 }
 .scroll-to-top-container {
   margin-left: 45%;

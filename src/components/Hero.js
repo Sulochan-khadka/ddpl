@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import Slider from 'react-slick';
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 import image1 from '../assets/img/designers-22Q4-1.jpg';
 import image2 from '../assets/img/architects-22Q4-1.jpg.avif';
 import image3 from '../assets/img/research-22Q4.jpg.avif';
 import image4 from '../assets/img/planners-22Q4-1.jpg';
 import image5 from '../assets/img/advisors-22Q4-1.jpg.avif';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+// import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import './hero.css';
 
 const Hero = () => {
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
   const banners = [
     {
       id: 1,
@@ -48,14 +49,23 @@ const Hero = () => {
     slidesToScroll: 1,
     pauseOnHover: false,
   };
-  const buttonClick = () => {
-    setActive(!active);
+  const clickHandler = () => {
+    console.log('once');
   };
   return (
     <div>
-      <Slider {...settings}>
+      <Fade
+        arrows={false}
+        duration={5000}
+        onChange={function noRefCheck() {}}
+        onStartChange={function noRefCheck() {}}
+        transitionDuration={500}
+        pauseOnHover={false}
+        infinite={true}
+        defaultIndex={1}
+      >
         {banners.map((item) => (
-          <div className='slide-container'>
+          <div key={item.id} className='slide-container'>
             <div className='image-description'>
               The future isn’t happening to us,{' '}
               <div className='image-text' style={{ display: 'flex' }}>
@@ -71,8 +81,8 @@ const Hero = () => {
             />
           </div>
         ))}
-      </Slider>
-      <span className='in-button' onClick={buttonClick}>
+      </Fade>
+      {/* <span className='in-button' onClick={buttonClick}>
         <span>
           I'm interested in{' '}
           <span>{active ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
@@ -89,7 +99,16 @@ const Hero = () => {
             </div>
           )}
         </div>
-      </span>
+      </span> */}
+      {/* <div
+        style={{
+          height: '240px',
+          backgroundColor: 'black',
+          color: 'whitesmoke',
+        }}
+      >
+        hello
+      </div> */}
     </div>
   );
 };

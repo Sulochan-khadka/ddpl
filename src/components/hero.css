@@ -9,7 +9,7 @@
   font-size: 70px;
   font-family: sans-serif;
   font-weight: 300;
-  color: white;
+  color: #f4f4f4;
 }
 .image-description .image-text {
   font-weight: 900;
@@ -17,7 +17,7 @@
 
 .in-button {
   font-family: sans-serif;
-  color: white;
+  color: #f4f4f4;
   font-size: 40px;
   position: relative;
   /* top: 100%; */
@@ -26,18 +26,19 @@
   font-weight: 300;
   cursor: pointer;
 }
-
+.text-in {
+}
+/* 
 .interested-container {
   position: relative;
   height: auto;
   width: 400px;
   background-color: rgb(240, 244, 244);
   border-radius: 10px;
-  /* top: 100%; */
-  /* overflow-y: auto; */
-  border: 1px solid #ccc;
-}
 
+  border: 1px solid #ccc;
+} */
+/* 
 .options {
   margin-left: 0;
   font-size: 25px;
@@ -48,4 +49,4 @@
 
 .option-text {
   padding-bottom: 20px;
-}
+} */

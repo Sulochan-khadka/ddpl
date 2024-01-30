@@ -8,6 +8,7 @@ import Slider from 'react-slick';
 import './awards.css';
 
 const Awards = () => {
+  console.log('hello');
   const banners = [
     {
       id: 1,
@@ -42,6 +43,39 @@ const Awards = () => {
         'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
       image: image5,
     },
+    {
+      id: 11,
+      title: 'Angular',
+      description: 'Mind Blowing projects with angular.',
+      image: image1,
+    },
+    {
+      id: 12,
+      title: 'Vue',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      image: image2,
+    },
+    {
+      id: 13,
+      title: 'Numpy',
+      description:
+        'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+      image: image3,
+    },
+    {
+      id: 14,
+      title: 'NodeJs',
+      description:
+        'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+      image: image4,
+    },
+    {
+      id: 15,
+      title: 'React',
+      description:
+        'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+      image: image5,
+    },
   ];
   const settings = {
     dots: false,
@@ -49,7 +83,8 @@ const Awards = () => {
     speed: 1000,
     arrows: false,
     autoplay: true,
-    slidesToShow: 4,
+    autoplaySpeed: 1000,
+    slidesToShow: 6,
     slidesToScroll: 1,
     initialSlide: 0,
     pauseOnHover: true,
@@ -82,6 +117,7 @@ const Awards = () => {
   };
   return (
     <div className='banner-wrapper'>
+      <div className='award-title'>Awards</div>
       <div className='awards-container'>
         <Slider {...settings}>
           {banners.map((banner) => (
