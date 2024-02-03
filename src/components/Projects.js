@@ -6,8 +6,10 @@ import image3 from '../assets/img/projects/capsule_616x353.jpg';
 import image4 from '../assets/img/projects/default.jpg.webp';
 import image5 from '../assets/img/projects/medium-vposter1123302-minecraft-poster-wallpaper-liveposter-original-imagka7n9aw9mmsb.jpeg.webp';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import { Link } from 'react-router-dom';
 // import HorizontalScroll from 'react-scroll-horizontal';
 const Projects = () => {
+  // const projectsHandler = () => {};
   const banners = [
     {
       id: 1,
@@ -110,9 +112,11 @@ const Projects = () => {
           </div>
         </Parallax>
         <div className='improve'>
-          <div className='projects-button-container'>
-            <div className='projects-button'>View all projects</div>
-          </div>
+          <Link to='/all-projects' style={{ textDecoration: 'none' }}>
+            <div className='projects-button-container'>
+              <div className='projects-button'>View all projects</div>
+            </div>{' '}
+          </Link>
         </div>
       </div>
     </ParallaxProvider>
